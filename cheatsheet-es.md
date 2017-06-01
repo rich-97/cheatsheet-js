@@ -77,3 +77,38 @@ x.toPresicion(n)          // Devuelve una cadena Representando el número según
 x.valueOf()               // Devuelve el valor primitivo del objeto.
 x.toString(2)             // Devuelve una cadena representando el número en la base especificada, la base puede ser un entero entre 2 y 36.
 ```
+
+## Object
+```javascript
+
+/*Declaración de objeto*/
+
+new Object( [ valor ] )                     // El constructor Object crea un contenedor de objeto
+
+/*Metodos de los objetos*/
+
+Object.assign(objetivo, ...fuentes)         // Copia los valores de todas la propiedades enumerables de uno o más objetos fuente a un objeto destino. Retorna el objeto destino. 
+Object.create(proto [, propertiesObject ])  // Crea un nuevo objeto con el objeto y propiedades del prototipo especificado.
+Object.defineProperties(obj, propiedades)   // Define nuevas o modifica propiedades existentes directamente en el objeto, returnando el objeto.
+Object.defineProperty(obj, prop, descriptor)// Define una nueva propiedad sobre un objeto, o modifica una ya existente, y devuelve el objeto modificado.  
+Object.freeze(obj)                          // Dongela un objeto: es decir, previene que nuevas propiedades sean agregadas; previene que las propiedades existentes sean eliminadas; y previene que las propiedades existentes, o su capacidad de enumeración, configuración, o escritura, de ser cambiadas
+Object.getOwnPropertyDescriptor(obj, prop)  // Regresa como descripción de propiedad para una propiedad propia (eso es, una presente directamente en el objeto, no presente por la fuerza a través de la cadena de prototipo del objeto) de un objeto dado.
+Object.getOwnPropertyNames(obj)             // Devuelve un array con todas las propiedades (numerables o no) encontradas en un objeto dado.
+Object.getPrototypeOf(obj)                  // Devuelve el prototipo (es decir, el valor de la propiedad interna [[Prototype]]) del objeto especificado.
+Object.isExtensible(obj)                    // Determina si un objeto es extendible (si puede tener propiedades nuevas agregadas a éste).
+Object.isFrozen(obj)                        // Determina si un objeto está congelado.
+Object.isSealed(obj)                        // Determina si un objeto esta sellado.
+Object.keys(obj)                            // Devuelve una matriz de las propias propiedades enumerables de un objeto dado, en el mismo orden que el proporcionado por un bucle for ... in (la diferencia es que un bucle for-in enumera las propiedades de la cadena prototype como bien).
+Object.preventExtensions(obj)               // Impide que se agreguen nuevas propiedades a un objeto (es decir, impide futuras extensiones al objeto).
+obj.hasOwnProperty(prop)                    // Devuelve un booleano que indica si el objeto tiene la propiedad especificada como propiedad propia (no heredada).
+prototypeObj.isPrototypeOf(object)          // Determina si un objeto existe en la cadena de prototipos de otro objeto.
+obj.propertyIsEnumerable(prop)              // Devuelve un booleano que indica si la propiedad especificada es enumerable.
+obj.toLocaleString()                        // Devuelve una cadena que representa el objeto. Este método está destinado a ser anulado por objetos derivados para propósitos específicos de la localidad.
+Object.toSource()                           // Devuelve una cadena que representa el código fuente del objeto.
+obj.toString()                              // Devuelve una cadena representando el objeto
+obj.unwatch(prop)                           // Elimina un conjunto de puntos de control con el método watch ().
+object.valueOf()                            // Devuelve el valor primitivo del objeto especificado.
+obj.watch(prop, handler)                    // Observa una propiedad a la que se le asigna un valor y ejecuta una función cuando se produce.
+Object.seal(obj)                            // Sella un objeto, evitando que se agreguen nuevas propiedades y marque todas las propiedades existentes como no configurables. Los valores de las propiedades actuales se pueden cambiar siempre y cuando sean escriturables.
+Object.setPrototypeOf(obj, prototype);      // Establece el prototipo (es decir, la propiedad interna [Prototype]] de un objeto especificado en otro objeto o null.
+```
