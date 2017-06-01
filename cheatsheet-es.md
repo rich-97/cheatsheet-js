@@ -81,11 +81,11 @@ x.toString(2)             // Devuelve una cadena representando el número en la 
 ## Object
 ```javascript
 
-/*Declaración de objeto*/
+/* Declaración de objeto */
 
-new Object( [ valor ] )                     // El constructor Object crea un contenedor de objeto
+new Object([valor])                     // El constructor Object crea un contenedor de objeto.
 
-/*Metodos de los objetos*/
+/* Metodos de los objetos */
 
 Object.assign(objetivo, ...fuentes)         // Copia los valores de todas la propiedades enumerables de uno o más objetos fuente a un objeto destino. Retorna el objeto destino. 
 Object.create(proto [, propertiesObject ])  // Crea un nuevo objeto con el objeto y propiedades del prototipo especificado.
@@ -105,7 +105,7 @@ prototypeObj.isPrototypeOf(object)          // Determina si un objeto existe en 
 obj.propertyIsEnumerable(prop)              // Devuelve un booleano que indica si la propiedad especificada es enumerable.
 obj.toLocaleString()                        // Devuelve una cadena que representa el objeto. Este método está destinado a ser anulado por objetos derivados para propósitos específicos de la localidad.
 Object.toSource()                           // Devuelve una cadena que representa el código fuente del objeto.
-obj.toString()                              // Devuelve una cadena representando el objeto
+obj.toString()                              // Devuelve una cadena representando el objeto.
 obj.unwatch(prop)                           // Elimina un conjunto de puntos de control con el método watch ().
 object.valueOf()                            // Devuelve el valor primitivo del objeto especificado.
 obj.watch(prop, handler)                    // Observa una propiedad a la que se le asigna un valor y ejecuta una función cuando se produce.
@@ -114,44 +114,42 @@ Object.setPrototypeOf(obj, prototype);      // Establece el prototipo (es decir,
 ```
 
 ## String
+
 ```javascript 
 /* Propiedades de la clase */
 
-String.length                // Devuelve la longitud del arreglo
+String.length                // Devuelve la longitud del arreglo.
 
 /* Metodos de la clase */
 
-String.fromCharCode(x)       // Devuelve una cadena creada mediante el uso de una secuencia de valores Unicode especificada.
-String.fromCodePoint(x)      // Devuelve una cadena creada por una secuencia de puntos de codigo.
-String.charAt(index)         // Devuelve el carácter especificado de una cadena.
-String.concat(, ... StringN) // Combina el texto de uno o mas cadenas y devuelve una nueva cadena.
-String.endsWith(String)      // Determina cuando una cadena termina con caracteres de una cadena especificada, retorna bool
-String.includes('String')    // Determina cuando una cadena puede encontrar otra cadena, retorna bool.
-String.indexOf('String')     // Retorna el indice dentro de la llamada al objeto cadena de la primera ocurrencia del valor especifico empezando a buscar en fromIndex, retorna -1 si no se encontro.
-String.lastIndexOf('String') // Retorna el indice dentro de la llamada al objeto cadena de la ultima ocurrencia del valor especifico empezando a buscar en fromIndex, retorna -1 si no se encontro.
-String.match(regexp)         // Recupera en un arreglo la comparacion cuando se comparo la cadena con la expresion regular.
-String.repeat(number)        // Construye y devuelve una nueva cadena que contiene el numero especifico de repeticiones del arreglo llamado concatenado
-String.search(regexp)        // Ejecuta una busqueda por una comparacion regular en un objeto string.
-String.slice(index, end)     // Extrae una seccion de una cadena y retorna una nueva cadena.
-String.split()               // Divive un objeto de cadena en un arreglo de cadenas separados en subcadenas.
-String.toLowerCase('string') // Coloca los caracteres en minuscula.
-String.toUpperCase('string') // Coloca los caracteres en mayuscula.
-String.trim('string')        // Quita los espacios en blanco de una cadena.
-String.substr(start,length)  // Retorna los caracteres en una cadena empezando por el inicio de una localizacion especificada por el numero de caracteres.
+string.fromCharCode(x)       // Devuelve una cadena creada mediante el uso de una secuencia de valores Unicode especificada.
+string.fromCodePoint(x)      // Devuelve una cadena creada por una secuencia de puntos de codigo.
+string.charAt(index)         // Devuelve el carácter especificado de una cadena.
+string.concat(, ... StringN) // Combina el texto de uno o mas cadenas y devuelve una nueva cadena.
+string.endsWith(String)      // Determina cuando una cadena termina con caracteres de una cadena especificada, retorna bool.
+string.includes('string')    // Determina cuando una cadena puede encontrar otra cadena, retorna bool.
+string.indexOf('string')     // Retorna el indice dentro de la llamada al objeto cadena de la primera ocurrencia del valor especifico empezando a buscar en fromIndex, retorna -1 si no se encontro.
+string.lastIndexOf('string') // Retorna el indice dentro de la llamada al objeto cadena de la ultima ocurrencia del valor especifico empezando a buscar en fromIndex, retorna -1 si no se encontro.
+string.match(regexp)         // Recupera en un arreglo la comparacion cuando se comparo la cadena con la expresion regular.
+string.repeat(number)        // Construye y devuelve una nueva cadena que contiene el numero especifico de repeticiones del arreglo llamado concatenado.
+string.search(regexp)        // Ejecuta una busqueda por una comparacion regular en un objeto string.
+string.slice(index, end)     // Extrae una seccion de una cadena y retorna una nueva cadena.
+string.split(separator)      // Divide un objeto de cadena en un arreglo de cadenas separados en subcadenas.
+string.toLowerCase('string') // Coloca los caracteres en minuscula.
+string.toUpperCase('string') // Coloca los caracteres en mayuscula.
+string.trim('string')        // Quita los espacios en blanco de una cadena.
+string.substr(start,length)  // Retorna los caracteres en una cadena empezando por el inicio de una localizacion especificada por el numero de caracteres.
 ```
+
 ## Function
 
 ```javascript
-/*Metodos de una funcion*/
-Function.prototype.apply() // invoca una determinada función asignando explícitamente el objeto this y un array o similar  como parámetros (argumentos) para dicha función.
+/* Metodos de una función */
 
-Function.prototype.bind() // es un método del objeto Function creado para manipular el valor contextual de this. 
-
-Function.prototype.call() // El método call() llama a una función con un valor this asignado y argumentos provistos de forma individual.
-
-Function.prototype.isGenerator() // El método isGenerator() determina si una función es un generador. 
-
-Function.prototype.toSource() // devuelve un string representando el código fuente del objeto.
-
-Function.prototype.toString() // retorna una cadena representando el código fuente de la función.
+function.apply(thisArg, array) // invoca una determinada función asignando explícitamente el objeto this y un array o similar  como parámetros (argumentos) para dicha función.
+function.bind(thisArg) // es un método del objeto Function creado para manipular el valor contextual de this. 
+function.call(thisArg, args...) // El método call() llama a una función con un valor this asignado y argumentos provistos de forma individual.
+function.isGenerator() // El método isGenerator() determina si una función es un generador. 
+function.toSource() // devuelve un string representando el código fuente del objeto.
+function.toString() // retorna una cadena representando el código fuente de la función.
 ```
