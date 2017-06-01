@@ -139,3 +139,19 @@ String.toUpperCase('string') // Coloca los caracteres en mayuscula.
 String.trim('string')        // Quita los espacios en blanco de una cadena.
 String.substr(start,length)  // Retorna los caracteres en una cadena empezando por el inicio de una localizacion especificada por el numero de caracteres.
 ```
+## Function
+
+```javascript
+/*Metodos de una funcion*/
+Function.prototype.apply() // invoca una determinada función asignando explícitamente el objeto this y un array o similar  como parámetros (argumentos) para dicha función.
+
+Function.prototype.bind() // es un método del objeto Function creado para manipular el valor contextual de this. 
+
+Function.prototype.call() // El método call() llama a una función con un valor this asignado y argumentos provistos de forma individual.
+
+Function.prototype.isGenerator() // El método isGenerator() determina si una función es un generador. 
+
+Function.prototype.toSource() // devuelve un string representando el código fuente del objeto.
+
+Function.prototype.toString() // retorna una cadena representando el código fuente de la función.
+```
