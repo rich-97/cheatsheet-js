@@ -112,3 +112,30 @@ obj.watch(prop, handler)                    // Observa una propiedad a la que se
 Object.seal(obj)                            // Sella un objeto, evitando que se agreguen nuevas propiedades y marque todas las propiedades existentes como no configurables. Los valores de las propiedades actuales se pueden cambiar siempre y cuando sean escriturables.
 Object.setPrototypeOf(obj, prototype);      // Establece el prototipo (es decir, la propiedad interna [Prototype]] de un objeto especificado en otro objeto o null.
 ```
+
+## String
+```javascript 
+/* Propiedades de la clase */
+
+String.length                // Devuelve la longitud del arreglo
+
+/* Metodos de la clase */
+
+String.fromCharCode(x)       // Devuelve una cadena creada mediante el uso de una secuencia de valores Unicode especificada.
+String.fromCodePoint(x)      // Devuelve una cadena creada por una secuencia de puntos de codigo.
+String.charAt(index)         // Devuelve el carácter especificado de una cadena.
+String.concat(, ... StringN) // Combina el texto de uno o mas cadenas y devuelve una nueva cadena.
+String.endsWith(String)      // Determina cuando una cadena termina con caracteres de una cadena especificada, retorna bool
+String.includes('String')    // Determina cuando una cadena puede encontrar otra cadena, retorna bool.
+String.indexOf('String')     // Retorna el indice dentro de la llamada al objeto cadena de la primera ocurrencia del valor especifico empezando a buscar en fromIndex, retorna -1 si no se encontro.
+String.lastIndexOf('String') // Retorna el indice dentro de la llamada al objeto cadena de la ultima ocurrencia del valor especifico empezando a buscar en fromIndex, retorna -1 si no se encontro.
+String.match(regexp)         // Recupera en un arreglo la comparacion cuando se comparo la cadena con la expresion regular.
+String.repeat(number)        // Construye y devuelve una nueva cadena que contiene el numero especifico de repeticiones del arreglo llamado concatenado
+String.search(regexp)        // Ejecuta una busqueda por una comparacion regular en un objeto string.
+String.slice(index, end)     // Extrae una seccion de una cadena y retorna una nueva cadena.
+String.split()               // Divive un objeto de cadena en un arreglo de cadenas separados en subcadenas.
+String.toLowerCase('string') // Coloca los caracteres en minuscula.
+String.toUpperCase('string') // Coloca los caracteres en mayuscula.
+String.trim('string')        // Quita los espacios en blanco de una cadena.
+String.substr(start,length)  // Retorna los caracteres en una cadena empezando por el inicio de una localizacion especificada por el numero de caracteres.
+```
